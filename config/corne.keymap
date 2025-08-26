@@ -74,41 +74,6 @@
     combos {
         compatible = "zmk,combos";
 
-        escape {
-            bindings = <&kp ESCAPE>;
-            key-positions = <13 29>;
-        };
-
-        delete {
-            bindings = <&kp DELETE>;
-            key-positions = <15 21>;
-        };
-
-        perc {
-            bindings = <&kp PERCENT>;
-            key-positions = <5 17>;
-        };
-
-        equal {
-            bindings = <&kp EQUAL>;
-            key-positions = <28 16>;
-        };
-
-        dollar {
-            bindings = <&kp DOLLAR>;
-            key-positions = <4 16>;
-        };
-
-        pound {
-            bindings = <&kp POUND>;
-            key-positions = <3 15>;
-        };
-
-        at {
-            bindings = <&kp AT>;
-            key-positions = <2 14>;
-        };
-
         backslash {
             bindings = <&kp BACKSLASH>;
             key-positions = <26 14>;
@@ -151,22 +116,22 @@
 
         leftbrack {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <31 32>;
+            key-positions = <15 14>;
         };
 
         rightbrack {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <33 32>;
+            key-positions = <20 21>;
         };
 
         para-less {
             bindings = <&paraless>;
-            key-positions = <20 19>;
+            key-positions = <16 15>;
         };
 
         para-great {
             bindings = <&paragreat>;
-            key-positions = <20 21>;
+            key-positions = <20 19>;
         };
     };
 
@@ -185,10 +150,10 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&kp GRAVE  &kp Q             &kp W           &kp F                 &kp P               &kp B            &kp J      &kp L        &kp U         &kp Y            &kp SEMICOLON      &kp BACKSLASH
-&kp LSHFT  &hm LEFT_SHIFT A  &hm LEFT_ALT R  &hm LCTRL S           &hm LEFT_COMMAND T  &kp G            &kp M      &hm RGUI N   &hm RCTRL E   &hm RIGHT_ALT I  &hm RIGHT_SHIFT O  &kp SQT
-&kp MINUS  &kp Z             &kp X           &kp C                 &kp D               &kp V            &kp K      &kp H        &kp COMMA     &kp DOT          &kp FSLH           &kp EQUAL
-                                             &kp LEFT_PARENTHESIS  &lt 1 TAB           &kp BACKSPACE    &kp SPACE  &lt 2 ENTER  &kp LEFT_ALT
+&kp GRAVE   &kp Q             &kp W           &kp F                 &kp P               &kp B            &kp J      &kp L        &kp U                      &kp Y            &kp SEMICOLON      &kp BACKSLASH
+&kp ESCAPE  &hm LEFT_SHIFT A  &hm LEFT_ALT R  &hm LCTRL S           &hm LEFT_COMMAND T  &kp G            &kp M      &hm RGUI N   &hm RCTRL E                &hm RIGHT_ALT I  &hm RIGHT_SHIFT O  &kp SQT
+&kp MINUS   &kp Z             &kp X           &kp C                 &kp D               &kp V            &kp K      &kp H        &kp COMMA                  &kp DOT          &kp FSLH           &kp EQUAL
+                                              &kp LEFT_PARENTHESIS  &lt 1 TAB           &kp BACKSPACE    &kp SPACE  &lt 2 ENTER  &kp LS(RIGHT_PARENTHESIS)
             >;
         };
 
@@ -202,10 +167,10 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&trans      &none   &none     &kp UP_ARROW  &none        &none            &kp N6   &kp N7  &kp N8  &kp N9  &kp N0  &trans
-&caps_word  &none   &kp LEFT  &kp DOWN      &kp RIGHT    &kp PAGE_UP      &kp N0   &kp N4  &kp N5  &kp N6  &trans  &trans
-&trans      &trans  &none     &none         &browsertab  &kp PAGE_DOWN    &trans   &kp N1  &kp N2  &kp N3  &trans  &trans
-                              &kp LGUI      &trans       &kp SPACE        &kp RET  &trans  &trans
+&trans      &none   &none     &kp UP_ARROW  &none        &none            &none   &kp N7        &kp N8  &kp N9  &none   &trans
+&caps_word  &none   &kp LEFT  &kp DOWN      &kp RIGHT    &kp PAGE_UP      &none   &kp N4        &kp N5  &kp N6  &trans  &trans
+&trans      &trans  &none     &none         &browsertab  &kp PAGE_DOWN    &trans  &kp N1        &kp N2  &kp N3  &trans  &trans
+                              &none         &trans       &none            &none   &kp NUMBER_0  &trans
             >;
         };
 
@@ -219,10 +184,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp EXCL  &kp AT          &kp HASH        &kp DLLR         &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RPAR  &trans
-&trans  &trans    &trans          &kp UP_ARROW    &trans           &kp GRAVE    &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT              &kp BSLH  &trans
-&trans  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp TILDE    &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC              &kp PIPE  &trans
-                                  &kp LGUI        &trans           &kp SPACE    &kp RET    &trans     &trans
+&trans  &none   &none     &kp UP_ARROW  &none      &none        &kp CARET  &kp AMPS   &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RPAR  &trans
+&trans  &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &none        &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT              &kp BSLH  &trans
+&trans  &trans  &none     &none         &none      &none        &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC              &kp PIPE  &trans
+                          &none         &trans     &kp SPACE    &kp RET    &trans     &trans
             >;
         };
 
