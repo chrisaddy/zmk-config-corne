@@ -134,10 +134,10 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&kp GRAVE      &kp Q             &kp W           &kp F        &kp P               &kp B      &kp J      &kp L       &kp U        &kp Y            &kp SEMICOLON      &kp LEFT_BRACKET
-&kp ESCAPE     &hm LEFT_SHIFT A  &hm LEFT_ALT R  &hm LCTRL S  &hm LEFT_COMMAND T  &kp G      &kp M      &hm RGUI N  &hm RCTRL E  &hm RIGHT_ALT I  &hm RIGHT_SHIFT O  &kp SINGLE_QUOTE
-&kp BACKSLASH  &kp Z             &kp X           &kp C        &kp D               &kp V      &kp K      &kp H       &kp COMMA    &kp DOT          &kp FSLH           &kp RIGHT_BRACKET
-                                                 &kp MINUS    &lt 1 BACKSPACE     &kp TAB    &kp ENTER  &kp SPACE   &kp EQUAL
+&kp GRAVE      &kp Q             &kp W           &kp F        &kp P               &kp B        &kp J      &kp L       &kp U        &kp Y            &kp SEMICOLON      &kp LEFT_BRACKET
+&kp ESCAPE     &hm LEFT_SHIFT A  &hm LEFT_ALT R  &hm LCTRL S  &hm LEFT_COMMAND T  &kp G        &kp M      &hm RGUI N  &hm RCTRL E  &hm RIGHT_ALT I  &hm RIGHT_SHIFT O  &kp SINGLE_QUOTE
+&kp BACKSLASH  &kp Z             &kp X           &kp C        &kp D               &kp V        &kp K      &kp H       &kp COMMA    &kp DOT          &kp FSLH           &kp RIGHT_BRACKET
+                                                 &kp MINUS    &kp BACKSPACE       &lt 1 TAB    &kp ENTER  &kp SPACE   &kp EQUAL
             >;
         };
 
