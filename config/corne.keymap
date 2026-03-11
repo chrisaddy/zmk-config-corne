@@ -65,7 +65,12 @@
         zellij_tab_left: zellij_tab_left {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LC(SPACE) &kp H>, <&macro_release>;
+            bindings =
+                <&macro_press>,
+                <&kp LC(SPACE)>,
+                <&macro_tap>,
+                <&kp H>,
+                <&macro_release>;
 
             label = "ZELLIJ_TAB_LEFT";
         };
@@ -73,7 +78,12 @@
         zellij_tab_right: zellij_tab_right {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LC(SPACE) &kp L>, <&macro_release>;
+            bindings =
+                <&macro_press>,
+                <&kp LC(SPACE)>,
+                <&macro_tap>,
+                <&kp L>,
+                <&macro_release>;
 
             label = "ZELLIJ_TAB_RIGHT";
         };
