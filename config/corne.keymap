@@ -61,61 +61,87 @@
                 <&macro_release>,
                 <&kp LCTRL>;
         };
+
+        zellij_tab_left: zellij_tab_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp LC(SPACE) &kp H>, <&macro_release>;
+
+            label = "ZELLIJ_TAB_LEFT";
+        };
+
+        zellij_tab_right: zellij_tab_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp LC(SPACE) &kp L>, <&macro_release>;
+
+            label = "ZELLIJ_TAB_RIGHT";
+        };
+
+        zellij_left: zellij_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp LC(H)>, <&macro_release>;
+
+            label = "ZELLIJ_LEFT";
+        };
+
+        zellij_down: zellij_down {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp LC(J)>, <&macro_release>;
+
+            label = "ZELLIJ_DOWN";
+        };
+
+        zellij_up: zellij_up {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp LC(K)>, <&macro_release>;
+
+            label = "ZELLIJ_UP";
+        };
+
+        zellij_right: zellij_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp LC(L)>, <&macro_release>;
+
+            label = "ZELLIJ_RIGHT";
+        };
     };
 
     combos {
         compatible = "zmk,combos";
 
-        escape {
-            bindings = <&kp ESCAPE>;
-            key-positions = <13 29>;
+        zellij_tab_left {
+            bindings = <&zellij_tab_left>;
+            key-positions = <16 18 15>;
         };
 
-        delete {
-            bindings = <&kp DELETE>;
-            key-positions = <15 21>;
+        zellij_tab_right {
+            bindings = <&zellij_tab_right>;
+            key-positions = <16 15 21>;
         };
 
-        perc {
-            bindings = <&kp PERCENT>;
-            key-positions = <5 17>;
-            layers = <0>;
+        zellij_left {
+            bindings = <&zellij_left>;
+            key-positions = <14 16 18>;
         };
 
-        equal {
-            bindings = <&kp EQUAL>;
-            key-positions = <28 16>;
-            layers = <0>;
+        zellij_down {
+            bindings = <&zellij_down>;
+            key-positions = <14 16 19>;
         };
 
-        dollar {
-            bindings = <&kp DOLLAR>;
-            key-positions = <4 16>;
-            layers = <0>;
+        zellij_up {
+            bindings = <&zellij_up>;
+            key-positions = <14 16 20>;
         };
 
-        pound {
-            bindings = <&kp POUND>;
-            key-positions = <3 15>;
-            layers = <0>;
-        };
-
-        at {
-            bindings = <&kp AT>;
-            key-positions = <2 14>;
-            layers = <0>;
-        };
-
-        backslash {
-            bindings = <&kp BACKSLASH>;
-            key-positions = <26 14>;
-            layers = <0>;
-        };
-
-        star {
-            bindings = <&kp STAR>;
-            key-positions = <8 20>;
-            layers = <0>;
+        zellij_right {
+            bindings = <&zellij_right>;
+            key-positions = <14 16 21>;
         };
     };
 
