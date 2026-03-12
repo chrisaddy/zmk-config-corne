@@ -170,10 +170,10 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&kp GRAVE      &kp Q             &kp W           &kp F        &kp P               &kp B        &kp J      &kp L       &kp U        &kp Y            &kp SEMICOLON      &kp LEFT_BRACKET
-&kp ESCAPE     &hm LEFT_SHIFT A  &hm LEFT_ALT R  &hm LCTRL S  &hm LEFT_COMMAND T  &kp G        &kp M      &hm RGUI N  &hm RCTRL E  &hm RIGHT_ALT I  &hm RIGHT_SHIFT O  &kp SINGLE_QUOTE
-&kp BACKSLASH  &kp Z             &kp X           &kp C        &kp D               &kp V        &kp K      &kp H       &kp COMMA    &kp DOT          &kp FSLH           &kp RIGHT_BRACKET
-                                                 &lt 2 MINUS  &kp BACKSPACE       &lt 1 TAB    &kp ENTER  &kp SPACE   &kp EQUAL
+&trans      &kp Q             &kp W           &kp F            &kp P               &kp B        &kp J      &kp L       &kp U        &kp Y            &kp SEMICOLON      &trans
+&kp ESCAPE  &hm LEFT_SHIFT A  &hm LEFT_ALT R  &hm LCTRL S      &hm LEFT_COMMAND T  &kp G        &kp M      &hm RGUI N  &hm RCTRL E  &hm RIGHT_ALT I  &hm RIGHT_SHIFT O  &kp SINGLE_QUOTE
+&trans      &kp Z             &kp X           &kp C            &kp D               &kp V        &kp K      &kp H       &kp COMMA    &kp DOT          &kp FSLH           &kp RA(SPACE)
+                                              &lt 2 BACKSLASH  &kp BACKSPACE       &lt 1 TAB    &kp ENTER  &kp SPACE   &kp GRAVE
             >;
         };
 
@@ -187,10 +187,10 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&trans      &trans  &trans          &kp UP_ARROW    &browsertab      &kp PG_UP        &trans  &kp N7  &kp N8  &kp N9  &trans  &trans
-&caps_word  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN    &trans  &kp N4  &kp N5  &kp N6  &trans  &trans
-&trans      &trans  &trans          &trans          &trans           &trans           &trans  &kp N1  &kp N2  &kp N3  &trans  &trans
-                                    &trans          &trans           &trans           &trans  &kp N0  &trans
+&trans      &trans  &trans          &kp UP_ARROW    &browsertab      &kp PG_UP        &trans             &kp N7  &kp N8  &kp N9  &trans     &trans
+&caps_word  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN    &kp LEFT_BRACKET   &kp N4  &kp N5  &kp N6  &kp MINUS  &trans
+&trans      &trans  &trans          &trans          &trans           &trans           &kp RIGHT_BRACKET  &kp N1  &kp N2  &kp N3  &kp EQUAL  &trans
+                                    &trans          &trans           &trans           &trans             &kp N0  &trans
             >;
         };
 
